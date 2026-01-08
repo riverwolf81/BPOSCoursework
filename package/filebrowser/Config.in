@@ -1,0 +1,6 @@
+config BR2_PACKAGE_FILEBROWSER
+    bool "filebrowser"
+    help
+      Lightweight web-based file manager for ARM.
+      From: https://github.com/filebrowser/filebrowser/releases
+

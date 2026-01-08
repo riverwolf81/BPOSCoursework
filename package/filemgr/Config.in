@@ -1,0 +1,8 @@
+config BR2_PACKAGE_FILEMGR
+    bool "filemgr"
+    depends on BR2_USE_WCHAR
+    depends on BR2_PACKAGE_SDL2
+    depends on BR2_PACKAGE_SDL2_TTF
+    help
+      A simple file manager using SDL2 and SDL2_ttf for font rendering.
+

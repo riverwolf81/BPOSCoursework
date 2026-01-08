@@ -1,0 +1,5 @@
+config BR2_PACKAGE_FILEMGR_WEB
+    bool "filemgr_web"
+    help
+      Python-based web file manager with icons and keyboard navigation.
+
