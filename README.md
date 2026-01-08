@@ -26,9 +26,22 @@ cd BPOSCoursework
 # 2. Configure WiFi
 cd board/raspberrypi/rootfs_overlays/etc
 nano wpa_supplicant.conf
-# Inside nano, add your network details like this:
+# Inside nano, add your network details like this -
+
+# For Home WIFI
 # network={
 #     ssid="YOUR_WIFI_NAME"
 #     psk="YOUR_WIFI_PASSWORD"
 # }
-# Then save and exit: CTRL+O → Enter → CTRL+X
+
+#For EDUROAM:
+#network={
+#    ssid="eduroam"
+#    key_mgmt=WPA-EAP
+#    eap=PEAP
+#    identity="EMAIL"
+#    password="YOUR PASSWORD"
+#    phase2="auth=MSCHAPV2"
+#}
+
+# Then save and exit: CTRL+X -> Y -> Enter
