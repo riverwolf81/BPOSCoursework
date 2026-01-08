@@ -18,14 +18,17 @@ This repository contains my custom Buildroot project for the Raspberry Pi 5, inc
 
 ## How to Access the Files from a Terminal 
 
-1. Clone the repository:
-
 ```bash
+# 1. Clone the repository and enter it
 git clone https://github.com/riverwolf81/BPOSCoursework.git
 cd BPOSCoursework
 
-2. Making Wifi Work
-You will need to add your Wifi ID and Password to the wpa_Supplicant.conf file found at the following location:
-```bash
-cd BPOSCoursework
-cd /board/raspberrypi5/rootfs_overlays/etc
+# 2. Configure WiFi
+cd board/raspberrypi5/rootfs_overlays/etc
+nano wpa_supplicant.conf
+# Inside nano, add your network details like this:
+# network={
+#     ssid="YOUR_WIFI_NAME"
+#     psk="YOUR_WIFI_PASSWORD"
+# }
+# Then save and exit: CTRL+O → Enter → CTRL+X
