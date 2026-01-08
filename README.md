@@ -24,7 +24,7 @@ git clone https://github.com/riverwolf81/BPOSCoursework.git
 cd BPOSCoursework
 
 # 2. Configure WiFi
-cd board/raspberrypi5/rootfs_overlays/etc
+cd board/raspberrypi/rootfs_overlays/etc
 nano wpa_supplicant.conf
 # Inside nano, add your network details like this:
 # network={
