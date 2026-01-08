@@ -23,3 +23,9 @@ This repository contains my custom Buildroot project for the Raspberry Pi 5, inc
 ```bash
 git clone https://github.com/riverwolf81/BPOSCoursework.git
 cd BPOSCoursework
+
+2. Making Wifi Work
+You will need to add your Wifi ID and Password to the wpa_Supplicant.conf file found at the following location:
+```bash
+cd BPOSCoursework
+cd /board/raspberrypi5/rootfs_overlays/etc
