@@ -26,7 +26,6 @@ cd BPOSCoursework
 # 2. Configure WiFi
 cd board/raspberrypi/rootfs_overlays/etc
 nano wpa_supplicant.conf
-# Inside nano, add your network details like this -
 
 # For Home WIFI
 # network={
